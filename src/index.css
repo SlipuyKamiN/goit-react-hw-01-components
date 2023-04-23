@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.profile {
+  width: 200px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 20px;
+}
+
+.stats {
+  font-size: 20px;
+}
