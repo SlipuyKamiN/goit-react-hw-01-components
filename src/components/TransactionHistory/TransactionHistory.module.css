@@ -1,0 +1,18 @@
+.transaction_history {
+  width: 900px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.head {
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+
+.row {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
