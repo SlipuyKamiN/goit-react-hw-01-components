@@ -1,4 +1,3 @@
-import Data from './Data';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
@@ -7,7 +6,10 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(element => (
-          <Data stats={element} key={element.id} />
+          <li className="item" key={element.id}>
+            <span className="label">{element.label}</span>
+            <span className="percentage">{element.percentage}%</span>
+          </li>
         ))}
       </ul>
     </section>
@@ -17,5 +19,5 @@ export default Statistics;
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.shape),
+  stats: PropTypes.arrayOf(PropTypes.shape).isRequired,
 };
