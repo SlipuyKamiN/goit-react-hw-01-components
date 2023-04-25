@@ -1,33 +1,35 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const ProfileCard = styled.div`
   width: 250px;
   border: 2px solid #000000;
   border-radius: 15px;
   padding: 15px;
-}
+`;
 
-.description {
+export const Description = styled.div`
   text-align: center;
   margin-bottom: 10px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   border-radius: 50%;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 30px;
   font-weight: 700;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
   font-size: 20px;
-}
+`;
 
-.location {
+export const Location = styled.p`
   font-size: 16px;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
   display: flex;
   max-width: 100%;
   list-style: none;
@@ -37,21 +39,15 @@
   border-radius: 10px;
   justify-content: space-around;
   align-items: center;
-}
+`;
 
-li {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.label {
+export const Label = styled.span`
   font-size: 20px;
   margin: 0;
   padding: 0;
-}
+`;
 
-.quantity {
+export const Quantity = styled.span`
   font-size: 24px;
   font-weight: 700;
-}
+`;
